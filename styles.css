@@ -32,8 +32,19 @@ body {
 }
 
 .feature img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: auto;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel .preview-image {
+    width: 250px;
+    height: auto;
 }
 
 .footer {
