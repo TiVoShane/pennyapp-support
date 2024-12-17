@@ -9,27 +9,65 @@ body {
     background-color: #fff;
 }
 
-/* Navigation */
+/* General Header Styling */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background: #fff;
+    align-items: center;
+    padding: 15px 50px;
+    background: linear-gradient(to bottom, #ffffff, #f8f8f8); /* Subtle gradient */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.nav-links {
+.logo {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 15px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #0072ff;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #0072ff;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .download-btn {
@@ -38,6 +76,19 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #005bb5;
+}
+
+.app-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 10px; /* Optional */
 }
 
 /* Hero Section */
@@ -82,11 +133,6 @@ body {
     margin-bottom: 20px;
 }
 
-.cta-button img {
-    width: 150px;
-    height: auto;
-}
-
 /* Features Section */
 .features {
     text-align: center;
@@ -119,7 +165,368 @@ body {
     font-weight: bold;
 }
 
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    background: #f9f9f9;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #0072ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 .legal a {
     text-decoration: none;
     color: #555;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0072ff;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* How It Works Section */
+.how-it-works {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step-reverse {
+    flex-direction: row-reverse;
+}
+
+.step-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.step-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #0072ff;
+}
+
+.step-text p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.step-visual {
+    flex: 1;
+    text-align: center;
+}
+
+.step-visual img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Pricing Section */
+.pricing {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.plan {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.plan h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #0072ff;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #0072ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #005bb5;
+}
+
+.cta-button {
+    outline: none; /* Remove browser default focus outline */
+    background: none; /* Remove any extra background */
+    border: none; /* Remove border styles */
+}
+
+.cta-button img {
+    width: 150px;
+    height: auto;
+    display: block; /* Ensures no inline spacing issues */
+    outline: none; /* Remove focus on image */
+}
+
+.cta-button:focus {
+    outline: 2px solid #0072ff; /* Custom focus style for visibility */
+    border-radius: 5px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: none; /* Remove any background */
+    border: none;     /* Remove borders */
+    outline: none;    /* Remove focus outlines */
+    padding: 0;       /* Remove extra padding */
+    transition: none; /* Disable any hover transitions */
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    outline: none;    /* Remove hover/focus outline */
+    box-shadow: none; /* Remove any shadow */
+    background: none; /* Remove any inherited hover background */
+}
+
+.cta-button img {
+    display: block;
+    width: 150px;
+    height: auto;
+    outline: none;    /* Remove image focus outline */
+    border: none;     /* Remove borders on image */
+    box-shadow: none; /* Ensure no hover shadow */
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.contact a {
+    color: #0072ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* FAQ Page Styling */
+.faq-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.faq-container h1 {
+    font-size: 2.5rem;
+    color: #0072ff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0072ff;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.faq-container h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.faq-container p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.faq-question {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #0072ff;
+}
+
+.faq-answer p {
+    margin: 0;
+    color: #555;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #333;
 }

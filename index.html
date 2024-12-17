@@ -2,161 +2,172 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Penny - Your AI Expense Tracker</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px auto;
-            max-width: 800px;
-            line-height: 1.6;
-            color: #333;
-            padding: 0 20px;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        h1 {
-            text-align: center;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #2c3e50;
-        }
-        h2 {
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
-            margin-top: 40px;
-        }
-        h3 {
-            margin-top: 30px;
-        }
-        p {
-            margin: 15px 0;
-        }
-        ul, ol {
-            margin: 15px 0;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .contact-info {
-            margin-top: 20px;
-        }
-        .faq-item {
-            margin-bottom: 25px;
-        }
-        .faq-question {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .faq-answer {
-            margin-left: 15px;
-        }
-        @media (max-width: 600px) {
-            body {
-                padding: 0 10px;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penny – AI Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1><img src="./Penny.png" width=50px height=50px>Penny - Your AI Expense Tracker</h1>
-    
-    <p>Welcome to the Penny App Support page. Here you'll find answers to frequently asked questions and resources to help you get the most out of Penny. If you need further assistance, please don't hesitate to contact us.</p>
-    
-    <h2>Frequently Asked Questions</h2>
-    
-    <div class="faq-item">
-        <div class="faq-question">1. How do I log an expense?</div>
-        <div class="faq-answer">
-            <p>You can log an expense by simply telling Penny about the expense. An expense requires some type of description, an amount, a category, and a date when it occurred.  For example, "I spent $30 at Best Buy today.  Categorize it as Shopping", or "I paid $50 to golf at Hilly Golf Course today.  Categorize it as Active Lifestyle". You can either type in your expense details or use the voice input feature to speak your expense. For example, say "Spent $50 on groceries at Whole Foods."</p>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Penny.png" alt="Penny Icon" class="app-icon">
+            <span>Penny</span>
         </div>
-    </div>
-    
-    <div class="faq-item">
-        <div class="faq-question">2. Can I edit or delete an expense?</div>
-        <div class="faq-answer">
-            <p>Yes, you can edit or delete an expense. Go to the "Expenses" tab, and tell Penny what you want to modify.  For example, "Penny, can you delete the golf expense from yesterday, please?" or "That Best Buy expense was supposed to be $35, not $30".  Penny will ask any follow-up questions needed and confirm which expense you want her to delete.</p>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+            <a href="faq.html">FAQ</a>
         </div>
-    </div>
-    
-    <div class="faq-item">
-        <div class="faq-question">3. How does the app categorize my expenses?</div>
-        <div class="faq-answer">
-            <p>Penny uses AI-powered algorithms to automatically categorize your expenses based on the description you provide. You can also just tell her the category you want. If you put it in the wrong category, ask Penny to move it.  You can also tell Penny "Anytime I shop at Walmart, categorize the expense as Groceries"</p>
-        </div>
-    </div>
-    
-    <div class="faq-item">
-        <div class="faq-question">4. Is my data secure?</div>
-        <div class="faq-answer">
-            <p>Yes, your data is securely stored using Firebase services by Google. All data is encrypted, and we implement industry-standard security measures to protect your information. For more details, please refer to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
-        </div>
-    </div>
-    
-    <div class="faq-item">
-        <div class="faq-question">5. How do I cancel my subscription?</div>
-        <div class="faq-answer">
-            <p>You can manage or cancel your subscription through your Apple ID account settings. Open the App Store, tap on your profile icon, select "Subscriptions," and choose Penny to make changes.  You can see the status of your subscription within the app by tapping on your profile pic.</p>
-        </div>
-    </div>
-    
-    <div class="faq-item">
-        <div class="faq-question">6. How can I export my expense data?</div>
-        <div class="faq-answer">
-            <p>Currently, we are working on adding an export feature. Stay tuned for updates in future releases!</p>
-        </div>
-    </div>
+        <a href="https://apps.apple.com/us/app/penny-ai-expense-tracker/id6680195347" class="cta-button"><img src="app-store-badge.png" alt="Download on the App Store"></a>
+    </nav>
 
-    <div class="faq-item">
-    <div class="faq-question">7. Can I create multiple custom shortcuts for different expenses?</div>
-    <div class="faq-answer">
-        <p>Yes! You can create as many custom shortcuts as you'd like for various expenses, categories, or stores.</p>
-    </div>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay">
+            <div class="hero-text">
+                <h1>Track. Save. Budget - Smarter with Penny</h1>
+                <p>AI-powered expense tracking made simple.</p>
+                <a href="https://apps.apple.com/us/app/penny-ai-expense-tracker/id6680195347" class="cta-button">
+                    <img src="app-store-badge.png" alt="Download on the App Store">
+                </a>
+            </div>
+        </div>
+        <img src="hero.jpg" alt="Penny App on Mobile" class="hero-image">
+    </header>
 
-    <div class="faq-item">
-    <div class="faq-question">8. How do I edit or delete a custom shortcut?</div>
-    <div class="faq-answer">
-        <p>In the Shortcuts app, go to the <strong>My Shortcuts</strong> tab. Tap the <strong>"..."</strong> button to edit or swipe left on the shortcut to delete it.</p>
-    </div>
+    <!-- Features Section -->
+<section id="features" class="features">
+    <h2>Why Choose Penny?</h2>
+    <div class="feature-grid">
+        <!-- Smart Budgeting -->
+        <div class="feature">
+            <img src="Budget.png" alt="Smart Budgeting">
+            <h3>Smart Budgeting</h3>
+            <p>Visualize and manage your spending effortlessly.</p>
+        </div>
 
-    <div class="faq-item">
-    <div class="faq-question">9. What if Siri doesn't recognize my custom phrase?</div>
-    <div class="faq-answer">
-        <p>Ensure your phrase is clear and unique. If you need to, rename the shortcut so it's more natural to you and easier to understand for Siri.  Adding "with Penny" at the end of the name can help Siri understand that it's a shortcut associated with Penny.  So consider changing the phrase to something like <strong>"Create a Festival Foods expense with Penny"</strong>strong> and see if that works better.</p>
-    </div>
+        <!-- Siri Shortcuts Integration -->
+        <div class="feature">
+            <img src="shortcuts2.png" alt="Siri Shortcuts Integration">
+            <h3>Siri Shortcuts Integration</h3>
+            <p>Add expenses hands-free using Siri commands.</p>
+        </div>
 
-</div>
-
-<h3>What if Siri doesn't recognize my custom phrase?</h3>
-<p>Ensure your phrase is clear and unique. If issues persist, try re-recording the phrase or using a different one.</p>
-
-<hr>
-    
-    
-    <div class="faq-item">
-        <div class="faq-question">7. Who do I contact for support or feedback?</div>
-        <div class="faq-answer">
-            <p>We'd love to hear from you! If you want to provide feedback, just tell Penny "I want to provide feedback".  You can also ask her how to do things.  If you want to send us a message, you can reach out on X/Twitter at <a href="https://x.com/ai_expense" target="_blank">@ai_expense</a></p>
+        <!-- Real-Time Widgets -->
+        <div class="feature">
+            <img src="widgets.png" alt="Real-Time Widgets">
+            <h3>Real-Time Widgets</h3>
+            <p>Stay updated directly from your home screen.</p>
         </div>
     </div>
+</section>
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="how-it-works">
+    <h2>How Penny Works</h2>
     
-    <h2>Contact Us</h2>
-    <p>If your question wasn't answered above or you need further assistance, please contact us on Twitter or ask Penny to send feedback or feature requests to us.</p>
-    <p class="contact-info">
-        <strong>X/Twitter:</strong> <a href="https://x.com/ai_expense" target="_blank">@ai_expense</a><br>
-    </p>
-    
-    <h2>Additional Resources</h2>
-    <ul>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <!-- Add more links to resources or guides if available -->
-    </ul>
+    <div class="steps-container">
+        <!-- Step 1 -->
+        <div class="step">
+            <div class="step-text">
+                <h3>Step 1: Tell Penny About Your Expenses</h3>
+                <p>Simply say, “Penny, I just spent $25 on groceries,” and let the AI do the rest. Penny will automatically categorize and save your expense.</p>
+            </div>
+            <div class="step-visual">
+                <img src="ai-input.png" alt="AI-Driven Expense Input">
+            </div>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="step step-reverse">
+            <div class="step-text">
+                <h3>Step 2: Penny Saves and Organizes It</h3>
+                <p>Penny uses AI to analyze your expense and place it in the right category. No manual entry needed.</p>
+            </div>
+            <div class="step-visual">
+                <img src="categorized-expenses.png" alt="Categorized Expenses">
+            </div>
+        </div>
+        
+        <!-- Step 3 -->
+        <div class="step">
+            <div class="step-text">
+                <h3>Step 3: Get Instant Insights</h3>
+                <p>Real-time widgets and charts keep you informed about your spending habits, budgets, and trends.</p>
+            </div>
+            <div class="step-visual">
+                <img src="real-time-charts.jpg" alt="Real-Time Spending Insights">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<!--
+<section id="testimonials" class="testimonials">
+    <h2>What Users Are Saying</h2>
+    <div class="testimonial-slider">
+        <div class="testimonial">
+            <p>&ldquo;Penny has completely changed the way I manage my finances. AI tracking is seamless and accurate!&rdquo;</p>
+            <span>- User A</span>
+        </div>
+        <div class="testimonial">
+            <p>&ldquo;The Siri integration makes adding expenses on the go a breeze.&rdquo;</p>
+            <span>- User B</span>
+        </div>
+        <div class="testimonial">
+            <p>&ldquo;The real-time insights helped me stay under budget for the first time in years.&rdquo;</p>
+            <span>- User C</span>
+        </div>
+    </div>
+</section>
+-->
+<!-- Pricing Section -->
+<section id="pricing" class="pricing">
+    <h2>Plans That Fit Your Needs</h2>
+    <div class="pricing-container">
+        <!-- Free Plan -->
+        <div class="plan">
+            <h3>Free Plan</h3>
+            <ul>
+                <li>✔️ Track expenses using AI and Siri</li>
+                <li>✔️ Limited AI usage per hour</li>
+                <li>✔️ Unlimited Shortcuts and Siri usage</li>
+            </ul>
+            <a href="https://apps.apple.com/us/app/penny-ai-expense-tracker/id6680195347" class="cta-button">Get Started for Free</a>
+        </div>
+        
+        <!-- Premium Plan -->
+        <div class="plan">
+            <h3>Premium Plan</h3>
+            <ul>
+                <li>✔️ Unlimited AI-driven expense tracking</li>
+                <li>✔️ Full access to all AI Insights</li>
+                <li>✔️ Unlimited Shortcuts and Siri Usage</li>
+            </ul>
+            <a href="https://apps.apple.com/us/app/penny-ai-expense-tracker/id6680195347" class="cta-button">Subscribe Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <p>Have questions or feedback? We'd love to hear from you!</p>
+    <p>Email us at <a href="mailto:PennyAIExpenseTracker@gmail.com">PennyAIExpenseTracker@gmail.com</a></p>
+    <p>Stay updated and follow us on <a href="https://x.com/ai_expense" target="_blank">Twitter/X</a>.</p>
+</section>
+
+   <!-- Footer -->
+<footer class="footer">
+    <div class="footer-links">
+        <a href="#">Home</a> | <a href="#features">Features</a> | <a href="#pricing">Pricing</a> | <a href="#contact">Contact</a> | <a href="faq.html">FAQ</a>
+    </div>
+    <div class="legal">
+        <a href="privacy-policy.html">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </div>
+</footer>
 </body>
 </html>
